@@ -9,6 +9,8 @@ var csscomb      = require('gulp-csscomb');      // 格式化css样式，排序
 var cssbeautify  = require('gulp-cssbeautify');  // 美化css样式
 var minifycss    = require('gulp-minify-css');   // 压缩css文件
 
+var livereload   = require('gulp-livereload');
+
 
 // 错误捕获
 var plumber = require('gulp-plumber');
@@ -32,5 +34,16 @@ gulp.task('css', function() {
             keepBreaks: true,           //类型：Boolean 默认：false [是否保留换行]
 			keepSpecialComments: '*'    //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
 		}))
-		.pipe(gulp.dest('./style/'));
+		.pipe(gulp.dest('./style/'))
+		.pipe(livereload({
+            quiet: true
+        }));
 });
+
+gulp.task('watch', function() {
+	livereload.listen();
+
+	gulp.watch('./style/*.scss', ['css']);
+})
+
+gulp.task('default', ['watch']);

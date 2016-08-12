@@ -1,6 +1,17 @@
 {
+	"name": "learn-gulp",
+	"version": "1.0.0",
+	"description": "gulp config",
+	"main": "gulpfile.js",
+	"author": "yangbo",
+	"license": "ISC",
 	"devDependencies": {
 		"gulp": "*",
-		"gulp-sass": "*"
+		"gulp-sass": "*",
+		"gulp-autoprefixer": "*",
+		"gulp-csscomb": "*",
+		"gulp-cssbeautify": "*",
+		"gulp-minify-css": "*",
+		"gulp-livereload": "*"
 	}
 }

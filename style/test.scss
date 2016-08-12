@@ -1,7 +1,15 @@
 body {
 	margin: 0;
+}
 
-	div {
-		border: 1px solid red;
-	}
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	margin: 20px auto;
+
+	text-align: center;
+	line-height: 200px;
+	color: #fff;
+	font-size: 60px;
 }
