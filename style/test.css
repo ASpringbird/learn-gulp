@@ -1,2 +1,15 @@
-body{margin:0}
-.box{font-size:60px;line-height:200px;width:200px;height:200px;margin:20px auto;text-align:center;color:#fff;background-color:orange}
+body {
+    margin: 0;
+}
+
+.box {
+    font-size: 60px;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    border-radius: 40px;
+    background-color: orange;
+}

@@ -15,24 +15,24 @@ git clone https://github.com/yangbo5207/learn-gulp.git
 ```js
 npm install
 ```
+> 不敢保证所有的依赖包都写入了配置文件，如果在使用中出现了错误，那么请手动安装错误提示中需要的依赖即可
 
-实现的效果，改变style目录中的scss文件，index.html中的效果会自动刷新。
-
-> 请确保浏览器中已经安装了livereload插件，并且插件的空心圆被点击变成成了实心圆。
 
 在命令行中进入项目，并运行下面的指令
 ```js
 > gulp
 ```
 
-运行过程提示大致如下
+即可启动本地开发环境
+
+上线指令
 ```js
-➜  learn-gulp git:(master) ✗ gulp
-[16:39:02] Using gulpfile ~/develop/me/learn-gulp/gulpfile.js
-[16:39:02] Starting 'watch'...
-[16:39:02] Finished 'watch' after 13 ms
-[16:39:02] Starting 'default'...
-[16:39:02] Finished 'default' after 7.08 μs
+> gulp build && gulp hash && gulp cdn
 ```
 
-> 如果在使用过程中发现有插件没有安装，依照微信公众号文章中的方式，将对应插件安装好即可
+或者运行front.sh文件
+```js
+> sh front.sh
+```
+
+> cdn地址可能不可用，因此会上传失败
